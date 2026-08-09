@@ -44,6 +44,8 @@ export interface EntityBase {
     direction?: number;
     orientation?: number;
 
+    player_description?: string;
+
     // connections?: { "1": ConnectionPoint, "2"?: ConnectionPoint };
     // control_behavior?: any;
 }

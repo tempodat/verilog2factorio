@@ -351,6 +351,8 @@ export abstract class Entity {
     id: number;
 
     source: Node;
+    
+    player_description?: string;
 
     constructor() {
         this.source = globalSource;

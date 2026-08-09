@@ -17,6 +17,7 @@ export class Input extends Node {
     override _connect() {
         this.constant = Constant.simple(0);
         this.constant.keep = true;
+        this.constant.player_description = this.name;
 
         return this.constant.output;
     }

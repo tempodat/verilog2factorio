@@ -47,7 +47,8 @@ export class Constant extends Entity {
             },
             connections: {
                 "1": this.input.convert()
-            }
+            },
+            player_description: this.player_description
         };
         if (!this.isOn) el.control_behavior.is_on = false;
 
