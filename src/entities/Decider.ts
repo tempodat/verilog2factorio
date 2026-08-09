@@ -80,7 +80,8 @@ export class Decider extends Entity {
             connections: {
                 "1": this.input.convert(),
                 "2": this.output.convert()
-            }
+            },
+            player_description: this.player_description
         };
     }
 }
