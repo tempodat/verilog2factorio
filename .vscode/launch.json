@@ -7,11 +7,12 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug",
+            "name": "Debug-chip8",
             "skipFiles": ["<node_internals>/**"],
             "runtimeArgs": ["--loader", "ts-node/esm"],
             "args": ["-g", "chunkAnnealing", "./samples/chip8/chip8.sv"],
             "program": "${workspaceFolder}/src/main.ts",
+            "envFile": "${workspaceFolder}/.vscode/.env"
         },
         {
             "type": "node",
@@ -19,7 +20,8 @@
             "name": "Test",
             "skipFiles": ["<node_internals>/**"],
             "runtimeArgs": ["--loader", "ts-node/esm"],
-            "program": "${workspaceFolder}/src/testing/main.ts",
+            "program": "${workspaceFolder}/test/main.ts",
+            "envFile": "${workspaceFolder}/.vscode/.env"
         }
     ]
 }
